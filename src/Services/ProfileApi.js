@@ -64,23 +64,23 @@ export const updateProfile = async (token, profileData) => {
 /* === create Profil=== */
 /* ============ */
 
-export const createProfile = async (token, profileData) => {
-  try {
-    const response = await axios.post(
-      `${baseUrl}/api/createProfile`,
-      profileData,
-      {
-        headers: {
-          'Content-Type': 'application/json',
-          'x-access-token': token,
-        }
-      }
-    );
-    toast.success(response.data.message);
-    return response.data;
-  } catch (error) {
-    console.error('Error creating profile:', error);
-    toast.error('Error creating profile');
-    throw error;
-  }
-};
+// export const createProfile = async (token, profileData) => {
+//   try {
+//     const response = await axios.post(
+//       `${baseUrl}/api/createProfile`,
+//       profileData,
+//       {
+//         headers: {
+//           'Content-Type': 'application/json',
+//           'x-access-token': token,
+//         }
+//       }
+//     );
+//     toast.success(response.data.message);
+//     return response.data;
+//   } catch (error) {
+//     console.error('Error creating profile:', error);
+//     toast.error('Error creating profile');
+//     throw error;
+//   }
+// };

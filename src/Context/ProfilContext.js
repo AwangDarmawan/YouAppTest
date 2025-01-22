@@ -129,7 +129,7 @@ export const ProfileProvider = ({ children }) => {
       horoscope: profileData.horoscope || "",
       zodiac: profileData.zodiac || "",
       interests: interests.length > 0 ? interests.flatMap(i => 
-      [i.gender, i.img,i.hobi]) : ["Male", "https://png.pngtree.com/png-vector/20190214/ourmid/pngtree-vector-plus-icon-png-image_515260.jpg",],
+      [i.gender, i.img,i.hobi]) : ["Male", "https://png.pngtree.com/png-vector/20190507/ourmid/pngtree-vector-plus-icon-png-image_1025536.jpg",],
     };
   
     console.log('Data yang akan dikirim:', updatedProfile);
@@ -140,7 +140,7 @@ export const ProfileProvider = ({ children }) => {
       fetchProfilContext(token);  
     } catch (error) {
       console.error('Terjadi kesalahan saat memperbarui profil:', error);
-      alert('Terjadi kesalahan saat memperbarui profil. Silakan coba lagi.');
+      
     }
   };
   

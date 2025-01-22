@@ -6,7 +6,7 @@ import { useEffect } from "react";
 
 
 
-function profil() {
+function CardProfil() {
  
    
   const { token, user, fetchProfilContext} = useAuth();
@@ -66,6 +66,6 @@ function profil() {
   )
 }
 
-export default profil
+export default CardProfil
 
 
