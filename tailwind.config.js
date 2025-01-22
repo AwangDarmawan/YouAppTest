@@ -13,11 +13,18 @@ module.exports = {
         'darkgold': '#B8860B',
         'goldenyellow': '#FDB813',
         'gold': '#FDB813',
-        
+        customGold: '#94783E',
+        customBeige: '#F3EDA6',
+        customLightBeige: '#F8FAE5',
+        customPeach: '#FFE2BE',
+        customBrown: '#D5BE88',
+       
         
     },
     backgroundImage: {
       'bluewarna': 'linear-gradient(to right, #62CDCB, #4599DB)', 
+      'custom-gradient': 'linear-gradient(to right, #94783E, #F3EDA6, #F8FAE5, #FFE2BE, #D5BE88, #F8FAE5, #D5BE88)',
+      
       
     },
     spacing: {

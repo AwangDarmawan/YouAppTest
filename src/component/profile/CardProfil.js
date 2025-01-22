@@ -5,11 +5,12 @@ import { useAuth } from "@/Context/AuthContext";
 import { useEffect } from "react";
 
 
+
 function profil() {
-  
  
+   
   const { token, user, fetchProfilContext} = useAuth();
-  
+  console.log("user data" ,user)
 
   useEffect(() => {
     if (!user && token) {
@@ -24,7 +25,7 @@ function profil() {
   const interests = [];
   for (let i = 0; i < user.interests.length; i += 2) {
     interests.push({
-      name: user.interests[i],
+      gender: user.interests[i],
       img: user.interests[i + 1],
     });
   }
@@ -41,24 +42,24 @@ function profil() {
     </div>
 
 
-
-<div className="flex items-center mb-6 relative">
-        {interests.map((interest, index) => (
-          <div key={index} className="w-full" >
+    {interests.map((interest, index) => (
+    <div className="flex items-center mb-6 relative bg-gray-800 " key={index} >
+          <div className="w-full " >
             <img
               src={interest.img}
-              alt={interest.name}
-              className="rounded-lg w-full h-190 object-cover"
+              alt="avatar"
+              className="rounded-lg w-full h-190 object-cover bg-transparent "
             />
           </div>
-        ))}
+      
   <h1 className="absolute  bottom-4 left-4 text-lg font-semibold text-white bg-opacity-60 px-2 py-1 rounded">
   <p>{user.username}</p>
+  <p>{interest.gender}</p>
   </h1>
 
 </div>
 
- 
+))}
 
    
     </>

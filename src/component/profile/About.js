@@ -1,7 +1,30 @@
 import Link from "next/link"
-
+import { useProfile } from "@/Context/ProfilContext";
 
 function About() {
+  const { profileData,updateNull} = useProfile();
+
+  
+  const calculateAge = (birthday) => {
+    const birthDate = new Date(birthday);
+    const today = new Date();
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const month = today.getMonth();
+    const day = today.getDate();
+
+    if (month < birthDate.getMonth() || (month === birthDate.getMonth() && day < birthDate.getDate())) {
+      age--;
+    }
+    return age;
+  };
+
+  const age = calculateAge(profileData.birthday);
+  
+    if (!profileData) {
+      return <p>Data Failed</p>;
+    }
+
+
   return (
     <>
    
@@ -10,11 +33,24 @@ function About() {
     <div className="flex justify-between items-center">
       <h2 className="text-sm font-medium">About</h2>
       <Link 
+       onClick={updateNull}
         href="/updateprofile">         
       <img src="/images/Arah.svg" alt="..." 
     
       className='hover:text-darkgold underline'/>
       </Link>
+    </div>
+    <div className="text-sm text-gray-400 mt-6">
+    <label className="flex gap-2 my-3">Birthday: 
+    <p className="text-white">{profileData.birthday} (Age {age})</p></label>
+    <label className="flex gap-2 my-3">Horoscope: 
+    <p className="text-white">{profileData.horoscope}</p></label>
+    <label className="flex gap-2 my-3">Zodiac: 
+    <p className="text-white">{profileData.zodiac}</p></label>
+    <label className="flex gap-2 my-3">Height: 
+    <p className="text-white">{profileData.height} cm</p></label>
+    <label className="flex gap-2 my-3">Weight: 
+    <p className="text-white">{profileData.weight} kg</p></label>
     </div>
     
     <p className="text-sm text-gray-400 mt-6">

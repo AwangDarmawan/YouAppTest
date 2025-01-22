@@ -9,8 +9,6 @@ const baseUrl = process.env.NEXT_PUBLIC_API_URL;
  /* ============ */
 /* === get Profile=== */
 /* ============ */
-
-
 export const getProfile = async (token) => {
   try {
     const response = await axios.get(`${baseUrl}/api/getProfile`, {
@@ -20,7 +18,7 @@ export const getProfile = async (token) => {
       },
     });
     if (response.status === 200) {
-      console.log("response profile", response.data.data);
+      console.log("response profiles", response.data.data);
       toast.success(response.data.data)
       return response.data.data;
       
@@ -66,19 +64,23 @@ export const updateProfile = async (token, profileData) => {
 /* === create Profil=== */
 /* ============ */
 
-export const createProfile = async (profileData, token) => {
+export const createProfile = async (token, profileData) => {
   try {
-    const response = await axios.post(`${baseUrl}/api/createProfile`, profileData, {
-      headers: {
-        'Content-Type': 'application/json',
-        'x-access-token': token,
-      },
-    });
-    toast.success(response.data.data)
+    const response = await axios.post(
+      `${baseUrl}/api/createProfile`,
+      profileData,
+      {
+        headers: {
+          'Content-Type': 'application/json',
+          'x-access-token': token,
+        }
+      }
+    );
+    toast.success(response.data.message);
     return response.data;
   } catch (error) {
-    console.error('Failed to create profile:', error);
-    toast.error(error.message)
+    console.error('Error creating profile:', error);
+    toast.error('Error creating profile');
     throw error;
   }
 };
