@@ -1,6 +1,6 @@
 'use client'; 
 import Link from "next/link"
-import Back from "../Profile/Back"
+import Back from "../Profile/back"
 import { useState } from 'react';
 import { RegisterUser } from "@/Services/AuthApi";
 import { Eye, EyeSlash } from 'phosphor-react';

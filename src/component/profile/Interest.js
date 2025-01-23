@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from 'next/image';
-function Interest() {
+function interest() {
   return (
     <>
       {/* <!-- Interest Section --> */}
@@ -24,4 +24,4 @@ function Interest() {
   )
 }
 
-export default Interest
+export default interest

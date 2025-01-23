@@ -2,7 +2,7 @@ import Link from "next/link"
 import { useProfile } from "@/Context/ProfilContext";
 import Image from 'next/image';
 
-function About() {
+function about() {
   const { profileData,updateNull} = useProfile();
 
   
@@ -65,4 +65,4 @@ function About() {
   )
 }
 
-export default About
+export default about

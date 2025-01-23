@@ -1,7 +1,7 @@
 "use client"
-import CardProfil from "@/component/Profile/CardProfil"
-import About from "@/component/Profile/About"
-import Interest from "@/component/Profile/Interest"
+import CardProfil from "@/component/Profile/cardprofil"
+import About from "@/component/Profile/about"
+import Interest from "@/component/Profile/interest"
 
 import { useAuth } from "@/Context/AuthContext"
 function page() {

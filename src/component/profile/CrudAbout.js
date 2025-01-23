@@ -2,7 +2,7 @@
 import { useProfile } from "@/Context/ProfilContext";
 import Image from 'next/image';
 
-function CrudAbout() {
+function crudabout() {
   const { profileData, interests, handleFileUpload, handleUpdateProfile, handleOnChange } = useProfile();
 
   if (!profileData) {
@@ -138,5 +138,5 @@ function CrudAbout() {
   );
 }
 
-export default CrudAbout;
+export default crudabout;
 

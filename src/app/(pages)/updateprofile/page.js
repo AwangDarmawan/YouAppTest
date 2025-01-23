@@ -1,9 +1,9 @@
 
 "use client"
 
-import CardProfil from "@/component/Profile/CardProfil"
-import UpdateAbout from "@/component/Profile/CrudAbout"
-import Interest from "@/component/Profile/Interest"
+import CardProfil from "@/component/Profile/cardprofil"
+import UpdateAbout from "@/component/Profile/crudabout"
+import Interest from "@/component/Profile/interest"
 import { useAuth } from "@/Context/AuthContext";
 
 
