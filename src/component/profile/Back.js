@@ -2,7 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 
-function Back() {
+function back() {
     const router = useRouter();
   return (
     <>
@@ -18,4 +18,4 @@ function Back() {
   )
 }
 
-export default Back
+export default back

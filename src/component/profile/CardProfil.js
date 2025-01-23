@@ -49,8 +49,8 @@ function cardprofil() {
               src={interest.img}
               alt="avatar"
               className="rounded-lg w-full h-190 object-cover bg-transparent "
-              width={64}  // Tentukan lebar gambar, sesuai dengan ukuran yang Anda inginkan
-    height={64}
+              width={64}  
+               height={64}
             />
           </div>
       
