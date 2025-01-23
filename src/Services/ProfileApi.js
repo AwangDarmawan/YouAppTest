@@ -9,7 +9,7 @@ const baseUrl = process.env.NEXT_PUBLIC_API_URL;
  /* ============ */
 /* === get Profile=== */
 /* ============ */
-export const getProfile = async (token) => {
+export const GetProfile = async (token) => {
   try {
     const response = await axios.get(`${baseUrl}/api/getProfile`, {
       headers: {
@@ -37,7 +37,7 @@ export const getProfile = async (token) => {
 /* ============ */
 /* === Update Profil=== */
 /* ============ */
-export const updateProfile = async (token, profileData) => {
+export const UpdateProfile = async (token, profileData) => {
   try {
     const response = await axios.put(
       `${baseUrl}/api/updateProfile`,

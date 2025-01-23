@@ -3,7 +3,7 @@
 'use client';
 import React, { createContext, useState, useContext, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { getProfile } from 'src/services/ProfileApi';
+import { GetProfile } from 'src/services/ProfileApi';
 
 const AuthContext = createContext();
 
@@ -23,7 +23,7 @@ export const AuthProvider = ({ children }) => {
   
 
   const fetchProfilContext = async (token) => {
-    const userData = await getProfile(token);
+    const userData = await GetProfile(token);
     if (userData) {
       setUser(userData);
     }

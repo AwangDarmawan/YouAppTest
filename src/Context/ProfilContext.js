@@ -1,6 +1,6 @@
 "use client";
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { updateProfile } from 'src/services/ProfileApi';
+import { UpdateProfile } from 'src/services/ProfileApi';
 import { useAuth } from '@/context/AuthContext';
 
 const ProfileContext = createContext();
@@ -105,7 +105,7 @@ export const ProfileProvider = ({ children }) => {
       interests: interests.flatMap(i => [i.gender, i.img]),
     };
 
-    const updatedData= await updateProfile(token, updatedProfile);
+    const updatedData= await UpdateProfile(token, updatedProfile);
     console.log("data update",updatedData )
     fetchProfilContext(token); 
   };
