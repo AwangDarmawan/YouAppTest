@@ -3,7 +3,7 @@
 import Back from "@/component/Profile/Back"
 import { useAuth } from "@/Context/AuthContext";
 import { useEffect } from "react";
-
+import Image from 'next/image';
 
 
 function CardProfil() {
@@ -45,10 +45,12 @@ function CardProfil() {
     {interests.map((interest, index) => (
     <div className="flex items-center mb-6 relative bg-gray-800 " key={index} >
           <div className="w-full " >
-            <img
+            <Image
               src={interest.img}
               alt="avatar"
               className="rounded-lg w-full h-190 object-cover bg-transparent "
+              width={64}  // Tentukan lebar gambar, sesuai dengan ukuran yang Anda inginkan
+    height={64}
             />
           </div>
       

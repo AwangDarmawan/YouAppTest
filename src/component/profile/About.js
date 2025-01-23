@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { useProfile } from "@/Context/ProfilContext";
+import Image from 'next/image';
 
 function About() {
   const { profileData,updateNull} = useProfile();
@@ -35,9 +36,10 @@ function About() {
       <Link 
        onClick={updateNull}
         href="/updateprofile">         
-      <img src="/images/Arah.svg" alt="..." 
+      {/* <Image src="/images/Arah.svg" alt="..." 
     
-      className='hover:text-darkgold underline'/>
+      className='hover:text-darkgold underline'/> */}
+       <Image src="/images/Arah.svg" alt="Update Profile" width={20} height={20} className="hover:text-darkgold underline" />
       </Link>
     </div>
     <div className="text-sm text-gray-400 mt-6">

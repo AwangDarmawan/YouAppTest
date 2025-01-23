@@ -1,6 +1,6 @@
 
 import { useProfile } from "@/Context/ProfilContext";
-
+import Image from 'next/image';
 
 function CrudAbout() {
   const { profileData, interests, handleFileUpload, handleUpdateProfile, handleOnChange } = useProfile();
@@ -28,12 +28,15 @@ function CrudAbout() {
         
           <div className="flex items-center space-x-4" >
             <div className="w-16 h-16 rounded-full bg-gray-700 overflow-hidden">
-              <img
+              <Image
                 src={interest.img || "/public/images/dowd.jpg"}
                 alt=""
                 className="w-full h-full object-cover"
+                width={100}  
+                height={100}
               />
             </div>
+            
             <label className="hover:text-gray-400 text-sm">
               <input
                 type="file"

@@ -4,7 +4,10 @@ const nextConfig = {
     remotePatterns:[
         {
             hostname:"placehold.co"
-        }
+        },
+        {
+            hostname: "png.pngtree.com", // Tambahkan hostname ini
+          },
     ]
  }
 }

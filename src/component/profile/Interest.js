@@ -1,5 +1,5 @@
 import Link from "next/link"
-
+import Image from 'next/image';
 function Interest() {
   return (
     <>
@@ -10,9 +10,10 @@ function Interest() {
       <Link 
        
         href="/interest">         
-      <img src="/images/Arah.svg" alt="..." 
+      {/* <Image src="/images/Arah.svg" alt="..." 
     
-      className='hover:text-darkgold underline'/>
+      className='hover:text-darkgold underline'/> */}
+       <Image src="/images/Arah.svg" alt="Update Profile" width={20} height={20} className="hover:text-darkgold underline" />
       </Link>
     </div>
     <p className="text-sm text-gray-400 mt-6">
