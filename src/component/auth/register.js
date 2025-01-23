@@ -1,8 +1,8 @@
 'use client'; 
 import Link from "next/link"
-import Back from "../Profile/back"
+import Back from "../profile/back"
 import { useState } from 'react';
-import { RegisterUser } from "@/Services/AuthApi";
+import { RegisterUser } from "@/services/AuthApi";
 import { Eye, EyeSlash } from 'phosphor-react';
 import { toast } from 'react-toastify';
 

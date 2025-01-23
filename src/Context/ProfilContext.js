@@ -1,7 +1,7 @@
 "use client";
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { updateProfile } from '@/Services/ProfileApi';
-import { useAuth } from '@/Context/AuthContext';
+import { updateProfile } from '@/services/ProfileApi';
+import { useAuth } from '@/context/AuthContext';
 
 const ProfileContext = createContext();
 

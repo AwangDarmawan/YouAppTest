@@ -1,10 +1,10 @@
 
 "use client"
 
-import CardProfil from "@/component/Profile/cardprofil"
-import UpdateAbout from "@/component/Profile/crudabout"
-import Interest from "@/component/Profile/interest"
-import { useAuth } from "@/Context/AuthContext";
+import CardProfil from "@/component/profile/cardprofil"
+import UpdateAbout from "@/component/profile/crudabout"
+import Interest from "@/component/profile/interest"
+import { useAuth } from "@/context/AuthContext";
 
 
 function page() {

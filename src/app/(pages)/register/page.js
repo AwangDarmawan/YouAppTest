@@ -1,5 +1,5 @@
 
-import Registers from "@/component/Auth/Register"
+import Registers from "@/component/auth/Register"
 function page() {
   return (
     <>

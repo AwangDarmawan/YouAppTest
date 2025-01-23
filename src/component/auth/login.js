@@ -2,15 +2,15 @@
 
 'use client';
 import Link from 'next/link';
-import Back from '@/component/Profile/back';
+import Back from '@/component/profile/back';
 import { toast } from 'react-toastify';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { Eye, EyeSlash } from 'phosphor-react';
 
-import { useAuth } from '@/Context/AuthContext';
+import { useAuth } from '@/context/AuthContext';
 
-import { LoginApi } from '@/Services/AuthApi';
+import { LoginApi } from '@/services/AuthApi';
 
 
 function Login() {

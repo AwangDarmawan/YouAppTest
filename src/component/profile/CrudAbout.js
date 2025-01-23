@@ -1,5 +1,5 @@
 
-import { useProfile } from "@/Context/ProfilContext";
+import { useProfile } from "@/context/ProfilContext";
 import Image from 'next/image';
 
 function crudabout() {

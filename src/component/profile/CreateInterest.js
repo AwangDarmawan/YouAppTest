@@ -1,4 +1,4 @@
-import Back from "@/component/Profile/back"
+import Back from "@/component/profile/back"
 
 function createinterest() {
   return (
