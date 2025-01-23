@@ -1,12 +1,12 @@
 
 "use client"
-import Back from "@/component/profile/back"
+import Back from "@/component/profile/Back"
 import { useAuth } from "@/context/AuthContext";
 import { useEffect } from "react";
 import Image from 'next/image';
 
 
-function cardprofil() {
+function CardProfil() {
  
    
   const { token, user, fetchProfilContext} = useAuth();
@@ -68,6 +68,6 @@ function cardprofil() {
   )
 }
 
-export default cardprofil
+export default CardProfil
 
 

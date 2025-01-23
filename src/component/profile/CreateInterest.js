@@ -1,6 +1,6 @@
-import Back from "@/component/profile/back"
+import Back from "@/component/profile/Back"
 
-function createinterest() {
+function CreateInterest() {
   return (
     <>  
         <div className="flex justify-between">  
@@ -32,4 +32,4 @@ function createinterest() {
   )
 }
 
-export default createinterest
+export default CreateInterest

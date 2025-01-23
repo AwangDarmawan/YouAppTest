@@ -1,9 +1,9 @@
-import CreateInterest from "@/component/profile/createinterest"
+import CreateInterest from "@/component/profile/CreateInterest"
 
 
 
 
-function page() {
+function InterstPage() {
   return (
     <>
      <div className="min-h-screen  text-white p-4">
@@ -15,4 +15,4 @@ function page() {
   )
 }
 
-export default page
+export default InterstPage

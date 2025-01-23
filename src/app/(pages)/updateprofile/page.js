@@ -1,13 +1,13 @@
 
 "use client"
 
-import CardProfil from "@/component/profile/cardprofil"
-import UpdateAbout from "@/component/profile/crudabout"
-import Interest from "@/component/profile/interest"
+import CardProfil from "@/component/profile/CardProfil"
+import UpdateAbout from "@/component/profile/CrudAbout"
+import Interest from "@/component/profile/Interest"
 import { useAuth } from "@/context/AuthContext";
 
 
-function page() {
+function UpdatePage() {
   const {Logout} = useAuth();
 
   return (
@@ -31,4 +31,4 @@ function page() {
   )
 }
 
-export default page
+export default UpdatePage

@@ -1,10 +1,10 @@
 'use client'; 
 import Link from "next/link"
-import Back from "../profile/back"
+import Back from "../profile/Back"
 import { useState } from 'react';
-import { RegisterUser } from "@/services/AuthApi";
 import { Eye, EyeSlash } from 'phosphor-react';
 import { toast } from 'react-toastify';
+import { RegisterUser } from "src/services/AuthApi";
 
 function Register() {
   const [email, setEmail] = useState('');
