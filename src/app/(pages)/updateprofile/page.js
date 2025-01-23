@@ -7,7 +7,7 @@ import Interest from "@/component/Profile/Interest"
 import { useAuth } from "@/Context/AuthContext";
 
 
-function Page() {
+function page() {
   const {Logout} = useAuth();
 
   return (
@@ -31,4 +31,4 @@ function Page() {
   )
 }
 
-export default Page
+export default page

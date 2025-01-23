@@ -1,6 +1,6 @@
 
 import Registers from "@/component/Auth/Register"
-function Register() {
+function page() {
   return (
     <>
     <Registers/>
@@ -9,4 +9,4 @@ function Register() {
   )
 }
 
-export default Register
+export default page
