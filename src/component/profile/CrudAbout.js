@@ -1,6 +1,6 @@
 
 // import { useProfile } from '@/context/ProfilContext';
-import {useProfile} from '../../context/ProfilContext'
+import { useProfile } from 'src/context/ProfilContext';
 import Image from 'next/image';
 
 function CrudAbout() {
