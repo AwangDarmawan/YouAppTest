@@ -1,7 +1,7 @@
 
 "use client"
 import Back from "@/component/profile/Back"
-import { useAuth } from "@/context/AuthContext";
+import { useAuth } from '@/context/AuthContext';
 import { useEffect } from "react";
 import Image from 'next/image';
 
