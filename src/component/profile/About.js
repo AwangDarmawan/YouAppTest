@@ -1,5 +1,6 @@
 import Link from "next/link"
-import { useProfile } from '@/context/ProfilContext';
+// import { useProfile } from '@/context/ProfilContext';
+import { useProfile } from '../../context/ProfilContext';
 import Image from 'next/image';
 
 function About() {

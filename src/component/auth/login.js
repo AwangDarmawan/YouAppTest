@@ -8,7 +8,8 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { Eye, EyeSlash } from 'phosphor-react';
 
-import { useAuth } from '@/context/AuthContext';
+// import { useAuth } from '@/context/AuthContext';
+import { useAuth } from '../../context/AuthContext';
 import { LoginApi } from 'src/services/AuthApi';
 
 
@@ -24,13 +25,7 @@ function Login() {
 
  
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-
-  //   await loginContext(email, username, password)
-  
-   
-  // };
+ 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
