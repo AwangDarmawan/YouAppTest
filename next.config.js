@@ -6,10 +6,19 @@ const nextConfig = {
             hostname:"placehold.co"
         },
         {
-            hostname: "png.pngtree.com", // Tambahkan hostname ini
+            hostname: "png.pngtree.com", 
           },
-    ]
- }
-}
+    ],
+ },
+ webpack: (config) => {
+    const path = require("path");
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      "@": path.resolve(__dirname, "src"), 
+    };
+    return config;
+  },
+};
+
 
 module.exports = nextConfig
