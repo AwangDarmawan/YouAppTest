@@ -7,8 +7,8 @@ import { toast } from 'react-toastify';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { Eye, EyeSlash } from 'phosphor-react';
-import { LoginApi } from '@/services/AuthApi';
-import { useAuth } from '@/context/AuthContext';
+import { LoginApi } from '@/services/Authap';
+import { useAuth } from '@/context/Acontext';
 
 
 function Login() {

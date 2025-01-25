@@ -1,5 +1,5 @@
 
-import { useProfile } from '@/context/ProfilContext';
+import { useProfile } from '@/context/Pcontext';
 
 import Image from 'next/image';
 
