@@ -1,5 +1,5 @@
 
-import Login from "@/component/auth/Login"
+import Login from "@/components/auth/Login"
 
 export default function Home() {
   return (

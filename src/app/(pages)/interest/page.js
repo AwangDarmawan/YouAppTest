@@ -1,4 +1,4 @@
-import CreateInterest from "@/component/profile/CreateInterest"
+import CreateInterest from "@/components/profile/CreateInterest"
 
 
 

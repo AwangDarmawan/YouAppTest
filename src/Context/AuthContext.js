@@ -3,7 +3,7 @@
 'use client';
 import React, { createContext, useState, useContext, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { GetProfile } from 'src/services/ProfileApi';
+import { GetProfile } from '@/services/ProfileApi';
 
 const AuthContext = createContext();
 

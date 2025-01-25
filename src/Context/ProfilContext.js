@@ -1,8 +1,8 @@
 "use client";
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { UpdateProfile } from 'src/services/ProfileApi';
-// import { useAuth } from '@/context/AuthContext';
-import {useAuth} from './AuthContext'
+import { useAuth } from '@/context/AuthContext';
+
 
 const ProfileContext = createContext();
 
@@ -136,7 +136,7 @@ export const ProfileProvider = ({ children }) => {
     console.log('Data yang akan dikirim:', updatedProfile);
   
     try {
-      const updatedData = await updateProfile(token, updatedProfile);
+      const updatedData = await UpdateProfile(token, updatedProfile);
       console.log('Profil berhasil diperbarui:', updatedData);
       fetchProfilContext(token);  
     } catch (error) {
