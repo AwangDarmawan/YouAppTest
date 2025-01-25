@@ -1,5 +1,6 @@
 
-import { useProfile } from '@/context/ProfilContext.js';
+// import { useProfile } from '@/context/ProfilContext.js';
+import {useProfile} from "@context/ProfilContext"
 
 import Image from 'next/image';
 
