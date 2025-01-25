@@ -10,7 +10,12 @@ const nextConfig = {
         },
         {
             hostname: "png.pngtree.com",
-          },
+        },
+
+        {
+            hostname: "blob:https://awang-app-test.vercel.app/",
+        },
+        
     ]
  },
 }
