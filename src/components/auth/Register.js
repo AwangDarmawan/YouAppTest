@@ -1,6 +1,6 @@
 'use client'; 
 import Link from "next/link"
-import Back from "../profile/Back"
+import Back from "@/profile/Back"
 import { useState } from 'react';
 import { Eye, EyeSlash } from 'phosphor-react';
 import { toast } from 'react-toastify';
