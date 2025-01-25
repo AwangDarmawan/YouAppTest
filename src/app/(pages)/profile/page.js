@@ -4,7 +4,7 @@ import CardProfil from "@/components/profile/CardProfil"
 import About from "@/components/profile/About"
 import Interest from "@/components/profile/Interest"
 
-import { useAuth } from "@/context/authcontext"
+import { useAuth } from "@/context/AuthContext"
 function ProfilePage() {
   const {Logout} = useAuth();
 

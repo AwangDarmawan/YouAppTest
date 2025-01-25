@@ -8,7 +8,7 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { Eye, EyeSlash } from 'phosphor-react';
 import { LoginApi } from '@/services/AuthApi';
-import { useAuth } from '@/context/authcontext';
+import { useAuth } from '@/context/AuthContext';
 
 
 function Login() {
