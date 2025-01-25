@@ -1,5 +1,5 @@
-import Link from "next/link"
-import { useProfile } from '@/context/ProfilContext';
+import Link from "next/link";
+import { useProfile } from '@/context/ProfilContext.js';
 
 import Image from 'next/image';
 
